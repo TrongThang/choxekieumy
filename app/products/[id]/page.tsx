@@ -43,35 +43,109 @@ function getAllImagesForCar(folderName: string, baseImage: string): string[] {
 // Map car ID to folder name (synchronized with /public/images/cars)
 // Renumbered to match `cars` ordering (sequential)
 const carFolderMap: Record<number, string> = {
-  1: "ford-transit-2024",
-  2: "fortuner-g-2014",
-  3: "sedona-2018",
-  4: "fortuner-2021",
-  5: "mitsubitsi-xpander-cross-2021",
-  6: "xpander-2022-premium",
-  7: "up-deeta-fortuner-2016",
-  8: "innova-2019",
-  9: "porsche-panamera-4s-2009",
-  10: "mazda3-2018-1.5-at",
-  11: "mercedes-smart-roadster-2003",
-  12: "sedona-2019",
-  13: "innova-v-2010",
-  14: "mercedes-c200-2012",
-  15: "bmw-x1-2010",
-  16: "chevrolet-trailblazer-2018",
-  17: "fortuner-v-2014",
-  18: "fotuner-2011-at",
-  19: "honda-city-top-2020-at",
-  20: "ranger-2018-at",
-  21: "vios-g-2019",
-  22: "cx5-2017-mau-moi",
-  23: "fotuner-2013-2cau-at",
-  24: "kia-sedona-2017",
+  1: "fotuner-2011-at",
+  2: "chevrolet-trailblazer-2018",
+  3: "toyota-corolla-altis-2018-vn",
+  4: "innova-2019-so-san",
+  5: "ford-transit-2024",
+  6: "fortuner-g-2014",
+  7: "sedona-2018",
+  8: "fortuner-2021",
+  9: "mitsubitsi-xpander-cross-2021",
+  10: "xpander-2022-premium",
+  11: "up-deeta-fortuner-2016",
+  12: "innova-2019",
+  13: "porsche-panamera-4s-2009",
+  14: "mazda3-2018-1.5-at",
+  15: "mercedes-smart-roadster-2003",
+  16: "sedona-2019",
+  17: "innova-v-2010",
+  18: "mercedes-c200-2012",
+  19: "bmw-x1-2010",
+  20: "fortuner-v-2014",
+  21: "honda-city-top-2020-at",
+  22: "ranger-2018-at",
+  23: "vios-g-2019",
+  24: "cx5-2017-mau-moi",
+  25: "fotuner-2013-2cau-at",
+  26: "kia-sedona-2017",
 };
 
 // Pre-defined image lists for each car (synchronized from `carFolderMap` values)
 const carImagesMap: Record<number, string[]> = {
   1: [
+    "/images/cars/fotuner-2011-at/z7441097635577_ef429ae9912f8691fa255a60a2277634.jpg",
+    "/images/cars/fotuner-2011-at/z7441097639471_ad3793e5f5b25fe73bbb89db152aec96.jpg",
+    "/images/cars/fotuner-2011-at/z7441097646237_f53090eb5fe06061a58ddf5ccee9e4d9.jpg",
+    "/images/cars/fotuner-2011-at/z7441097647385_91630e11520d6e5c65059ede2fa0c581.jpg",
+    "/images/cars/fotuner-2011-at/z7441097648169_e87f3c50dcbf8b37b493ce66a1269c5d.jpg",
+    "/images/cars/fotuner-2011-at/z7441097653292_5aa2304fd6dd10ff3ea9773ad46c90b8.jpg",
+    "/images/cars/fotuner-2011-at/z7441097654630_82dae8930b62d3aff1b27e2901d1c359.jpg",
+    "/images/cars/fotuner-2011-at/z7441097654946_b10d7efb333b1eef1f92bb67edb44b0a.jpg",
+    "/images/cars/fotuner-2011-at/z7441097658954_d0b8138a81e063c9033b29000ec69f70.jpg",
+    "/images/cars/fotuner-2011-at/z7441097664302_5369d7a1289348af4245a3614b5a482a.jpg",
+    "/images/cars/fotuner-2011-at/z7441097664594_3e1b94552ab9f49f5e24188c1c566542.jpg",
+    "/images/cars/fotuner-2011-at/z7441097669024_102aeaf26ce7a668eaee483080073dcc.jpg",
+    "/images/cars/fotuner-2011-at/z7441097669335_4919899dd91c2c79c0a31c51aea4df35.jpg",
+    "/images/cars/fotuner-2011-at/z7441097675295_11a412dc8d001bccdf85cfcc9eca9c66.jpg",
+    "/images/cars/fotuner-2011-at/z7441097676133_f2801a40c6903a38d9013e4371e003b4.jpg",
+    "/images/cars/fotuner-2011-at/z7441097676276_aa6478509376ccfdb9d24ba3dfa8b3e9.jpg",
+    "/images/cars/fotuner-2011-at/z7441097681744_7894d2e469d6ef8313c7b018f7ce4e35.jpg",
+    "/images/cars/fotuner-2011-at/z7441097685213_174b6d2508fc5761ee674a28823f7efd.jpg",
+  ],
+  2: [
+    "/images/cars/chevrolet-trailblazer-2018/z7441092489744_192af82c4d4109cf00d567ff7f1199a1.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092497445_53bb94ca99ac0099db7ae72b126275ea.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092497751_58557b3398b1b5cd4d9de76e4205d3d9.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092501865_c5a839b5bce12e7ea64885f601af45a7.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092506452_d1304aaa007b0d15a4448a9a10e70d3b.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092507786_fcf73cc2f113b41d8e060e3f97a26d45.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092508099_4d3a4c72523b5fe405fa394cecc830f5.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092515523_91d3d994b913d329f6ed1329bd97befb.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092515652_3f7f9faf2f45c3df49b7c5c319a9cbb0.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092515802_921074d59ee371d085a68bf402b4072b.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092517736_9e12820bede2ba57ebfda5954adf28f9.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092525522_58d1649ea0f738dce695c5defcc090b6.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092526792_f8f970dabd777325ff410f206d9ab029.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092531513_492f84b8ab4279a4998c7aee1c3b92b0.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092536042_712a4f64291d181fd6c432c64a74cd26.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092536790_4a6356f42b0e669008670bb24a0d304f.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092539015_8a53cc250263316861fa38192624340d.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092543476_f530a8f12deb2254278a88f7d1bf0a61.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092543673_990001c4b945d35373ad9e34f29eb57b.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092545670_0f1055d7664ae98d0aa2986690c5c93a.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092547735_df0c641836a78554fa37e28052bf7949.jpg",
+    "/images/cars/chevrolet-trailblazer-2018/z7441092556108_07e59ff0aad78938fadc87fe661ee608.jpg",
+  ],
+  3: [
+    "/images/cars/toyota-corolla-altis-2018-vn/z7355203125453_37329acb53fe54618d17b3c6b2d0b403.jpg",
+    "/images/cars/toyota-corolla-altis-2018-vn/z7355203125690_81f19dbffbf5d948ece91b8313737eba.jpg",
+    "/images/cars/toyota-corolla-altis-2018-vn/z7355203125937_17380629504866385424555555555555.jpg",
+    "/images/cars/toyota-corolla-altis-2018-vn/z7355203128347_22289260217344544555555555555555.jpg",
+    "/images/cars/toyota-corolla-altis-2018-vn/z7355203130757_17380629504866385424555555555555.jpg",
+    "/images/cars/toyota-corolla-altis-2018-vn/z7355203133167_61454444111144444444444444444444.jpg",
+    "/images/cars/toyota-corolla-altis-2018-vn/z7355203135577_34920701127299030544555154555555.jpg",
+    "/images/cars/toyota-corolla-altis-2018-vn/z7355203137987_60320711027310324145454414411544.jpg",
+    "/images/cars/toyota-corolla-altis-2018-vn/z7355203140417_37960795370355300191010501015514.jpg",
+    "/images/cars/toyota-corolla-altis-2018-vn/z7355203142827_67879922217155292263262130213611.jpg",
+    "/images/cars/toyota-corolla-altis-2018-vn/z7355203145237_83272375056882500422930206403238.jpg",
+    "/images/cars/toyota-corolla-altis-2018-vn/z7355203147647_30520782393814699696120514446283.jpg",
+    "/images/cars/toyota-corolla-altis-2018-vn/z7355203150057_c152b6563308c4533a323c02263d6364.jpg",
+    "/images/cars/toyota-corolla-altis-2018-vn/z7355203152467_18090011c63376a4b38726c33c134545.jpg",
+    "/images/cars/toyota-corolla-altis-2018-vn/z7355203154877_b5b2348c33861b63a1b461498967536d.jpg",
+  ],
+  4: [
+    "/images/cars/innova-2019-so-san/z7355203216939_b5b2348c33861b63a1b461498967536d.jpg",
+    "/images/cars/innova-2019-so-san/z7355203217339_18090011c63376a4b38726c33c134545.jpg",
+    "/images/cars/innova-2019-so-san/z7355203217720_c152b6563308c4533a323c02263d6364.jpg",
+    "/images/cars/innova-2019-so-san/z7355203220101_30520782393814699696120514446283.jpg",
+    "/images/cars/innova-2019-so-san/z7355203220522_83272375056882500422930206403238.jpg",
+    "/images/cars/innova-2019-so-san/z7355203223042_67879922217155292263262130213611.jpg",
+    "/images/cars/innova-2019-so-san/z7355203223542_37960795370355300191010501015514.jpg",
+    "/images/cars/innova-2019-so-san/z7355203225952_60320711027310324145454414411544.jpg",
+    "/images/cars/innova-2019-so-san/z7355203226202_34920701127299030544555154555555.jpg",
+  ],
+  5: [
     "/images/cars/ford-transit-2024/z7355203076348_5c487b965a59a4ad8dc0f0004517c701.jpg",
     "/images/cars/ford-transit-2024/z7355203080472_a2e10a17ae8962a6c438f10724283dfb.jpg",
     "/images/cars/ford-transit-2024/z7355203082439_ef0a0ecba0f44c02e9698fd93422f40e.jpg",
@@ -92,7 +166,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/ford-transit-2024/z7355203177256_599c39158757fc2f306f584ead9eb4ed.jpg",
     "/images/cars/ford-transit-2024/z7355203177493_9b2cb17a94bdc7eb576b75f7727fa2fc.jpg",
   ],
-  2: [
+  6: [
     "/images/cars/fortuner-g-2014/z7355203969680_699057bdea05a831ccbe67125ceaec3a.jpg",
     "/images/cars/fortuner-g-2014/z7355203976172_6f4fa5a2acb721fd877d25f40ef70f36.jpg",
     "/images/cars/fortuner-g-2014/z7355203985722_4245a21520bb8e607dc74a8d387eec6d.jpg",
@@ -118,7 +192,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/fortuner-g-2014/z7355204099119_42bc306e9e08295cbb665e4d66c28565.jpg",
     "/images/cars/fortuner-g-2014/z7355204114809_7cab4af23fb22f2cd0e3619df97e8e88.jpg",
   ],
-  3: [
+  7: [
     "/images/cars/sedona-2018/z7355205359095_99216fd3ee059cea9a843785f071cfa3.jpg",
     "/images/cars/sedona-2018/z7355205359322_c1eb48e647fa09d5abd4a0e8e49f13dd.jpg",
     "/images/cars/sedona-2018/z7355205367564_ed9136343c73d512bbe5be2f7c927023.jpg",
@@ -139,7 +213,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/sedona-2018/z7355205453936_a648e45986d8a053eb3c521492ca7eae.jpg",
     "/images/cars/sedona-2018/z7355205457680_5c8e855b1ab308a30742d85e2ff6f8d7.jpg",
   ],
-  4: [
+  8: [
     "/images/cars/fortuner-2021/z7355205874506_70220a2db30d86a2a554ebc38a7591f5.jpg",
     "/images/cars/fortuner-2021/z7355205884445_282fd72bc71e65fb24c54c7ac18befce.jpg",
     "/images/cars/fortuner-2021/z7355205889598_d31d1eb3ef2b8af9cce742be0638a4d3.jpg",
@@ -163,7 +237,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/fortuner-2021/z7355205991345_9427bf3fc3d1a66947a34106bfbd6132.jpg",
     "/images/cars/fortuner-2021/z7355205992101_b058e55a4bb140f048b50536e202b133.jpg",
   ],
-  5: [
+  9: [
     "/images/cars/mitsubitsi-xpander-cross-2021/z7355207396953_7f20bfe379ec222add870c72ffad4f75.jpg",
     "/images/cars/mitsubitsi-xpander-cross-2021/z7355207401704_bd406e799130645611ecdd877a32aed2.jpg",
     "/images/cars/mitsubitsi-xpander-cross-2021/z7355207406519_08701fb4b452d7d82f493d00e6d53734.jpg",
@@ -191,7 +265,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/mitsubitsi-xpander-cross-2021/z7355207539194_e2a1185871e534d4b382400b0a01edfb.jpg",
     "/images/cars/mitsubitsi-xpander-cross-2021/z7355207540550_0c2ba028a48fd3818311ae3ee9a19375.jpg",
   ],
-  6: [
+  10: [
     "/images/cars/xpander-2022-premium/z7355208479246_bc65fb76bfd4f5b7d32efc379e943127.jpg",
     "/images/cars/xpander-2022-premium/z7355208485930_f840175ba39d584e17e4a33cfba29bd4.jpg",
     "/images/cars/xpander-2022-premium/z7355208490140_27c545c561bc3e5591e30c07e9cf37df.jpg",
@@ -206,7 +280,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/xpander-2022-premium/z7355208543930_41b70d81e5764154ad23cafea4a2006c.jpg",
     "/images/cars/xpander-2022-premium/z7355208543995_095a8f12bcd1c3365f3a101525520d57.jpg",
   ],
-  7: [
+  11: [
     "/images/cars/up-deeta-fortuner-2016/z7355209423772_4c2ae6ebcf9edcfbd025490d9e33ddca.jpg",
     "/images/cars/up-deeta-fortuner-2016/z7355209428828_939006a0c8a2e4aef719a192304b826b.jpg",
     "/images/cars/up-deeta-fortuner-2016/z7355209434301_1e467f32863b53c5b39036a869b4746e.jpg",
@@ -227,7 +301,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/up-deeta-fortuner-2016/z7355209532252_e6f4470d583e5aba35baf9423ba18f01.jpg",
     "/images/cars/up-deeta-fortuner-2016/z7355209535526_b1e00d178008651259fc3e81cdef31b0.jpg",
   ],
-  8: [
+  12: [
     "/images/cars/innova-2019/z7355209965956_395172494b41903e7cea5c87779f6d72.jpg",
     "/images/cars/innova-2019/z7355209975844_f672015ad0132895da8ca8b4b569529f.jpg",
     "/images/cars/innova-2019/z7355209982477_0d536b1aad1d89b83c68fc3f13a673d7.jpg",
@@ -242,7 +316,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/innova-2019/z7355210036540_2d7140bda0d48d4f8acf76c44786553d.jpg",
     "/images/cars/innova-2019/z7355210040693_cefe65c6d91e34f679c356d09569775b.jpg",
   ],
-  9: [
+  13: [
     "/images/cars/porsche-panamera-4s-2009/z7355211464480_f5718f7292c52352d869993f9e723002.jpg",
     "/images/cars/porsche-panamera-4s-2009/z7355211470052_903021cfb89adbbbefd1345d3babd56f.jpg",
     "/images/cars/porsche-panamera-4s-2009/z7355211470789_cf28c707036c489e30a6640b37deaf9d.jpg",
@@ -269,7 +343,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/porsche-panamera-4s-2009/z7355216599446_9353810dfe24389686a87b14c55d8648.jpg",
     "/images/cars/porsche-panamera-4s-2009/z7355216609320_b05791103e2d2bf669702d730aea54c8.jpg",
   ],
-  10: [
+  14: [
     "/images/cars/mazda3-2018-1.5-at/z7355212785663_693116d5d2aa9e9455cd87abe23503db.jpg",
     "/images/cars/mazda3-2018-1.5-at/z7355212785899_a5e7c14ff31653ae210eaba45c66ea10.jpg",
     "/images/cars/mazda3-2018-1.5-at/z7355212796163_1c83205257d57272d60d9bceed574f39.jpg",
@@ -287,7 +361,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/mazda3-2018-1.5-at/z7355212866754_a973e47a230bf4f93402a05f04963e9a.jpg",
     "/images/cars/mazda3-2018-1.5-at/z7355212874040_fa0689c87e606005f8d1697806711e10.jpg",
   ],
-  11: [
+  15: [
     "/images/cars/mercedes-smart-roadster-2003/z7355214347527_ab8c3d2ddae60375414d7ad9ced83fb3.jpg",
     "/images/cars/mercedes-smart-roadster-2003/z7355214347756_67d2f6d18093142da975f4c60845f6a2.jpg",
     "/images/cars/mercedes-smart-roadster-2003/z7355214353618_03fe34fe6e002564a4ab377fceb3cbbe.jpg",
@@ -310,24 +384,10 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/mercedes-smart-roadster-2003/z7355214461934_167090b5a0543f68be769051928dc87b.jpg",
     "/images/cars/mercedes-smart-roadster-2003/z7355214463778_38a80a42fcbd7bd103af9b8814c06f90.jpg",
   ],
-  12: [
-    "/images/cars/sedona-2019/z7355215017979_a8ddfea0d44420de080292c15f0ed97d.jpg",
-    "/images/cars/sedona-2019/z7355215021352_e035787cc7c4051ae2af6bf7b09b5aca.jpg",
-    "/images/cars/sedona-2019/z7355215029449_3a1bc46f55ffa3f84f02e2e463e724ff.jpg",
-    "/images/cars/sedona-2019/z7355215032486_08d8632b64b01467b5db0b3e3533c38b.jpg",
-    "/images/cars/sedona-2019/z7355215043158_deb62eda141e58aae083516d8a1c60bd.jpg",
-    "/images/cars/sedona-2019/z7355215051716_9ab0aaac7c41ae46b1f3059315842503.jpg",
-    "/images/cars/sedona-2019/z7355215051954_afecbc6e21a0d75e02221dc2c7ba18c2.jpg",
-    "/images/cars/sedona-2019/z7355215058783_5547f8a5c8595504f37b20d5b235f03c.jpg",
-    "/images/cars/sedona-2019/z7355215062809_da7b4d2a89f63400eed9e81c122e5176.jpg",
-    "/images/cars/sedona-2019/z7355215074243_e20e5afb272ef404d7a8ba8bba40b195.jpg",
-    "/images/cars/sedona-2019/z7355215075960_0a1a8c296bbfedb29fa18091ab5e24d4.jpg",
-    "/images/cars/sedona-2019/z7355215088841_dabc53bdd34511f170ef5d4588ca08d0.jpg",
-    "/images/cars/sedona-2019/z7355215090351_93254c645c7af1a15e13f330112254bc.jpg",
-    "/images/cars/sedona-2019/z7355215096072_6e75437ffc0e86b79fa59f343a6f3969.jpg",
-    "/images/cars/sedona-2019/z7355215102517_383178fc1af7d927b12319031e644e43.jpg",
+  16: [
+    "/images/cars/sedona-2019/"
   ],
-  13: [
+  17: [
     "/images/cars/innova-v-2010/z7355215996992_0fb5fc256358c1bb94531e912835f704.jpg",
     "/images/cars/innova-v-2010/z7355216003912_e2a8868df70b5c5eb11ddbe00fbec3da.jpg",
     "/images/cars/innova-v-2010/z7355216004139_ce73bd7897750449a90c6d4335dc318d.jpg",
@@ -350,7 +410,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/innova-v-2010/z7355216105549_82aa8007dcf7e960c6c301c3bb4eeac5.jpg",
     "/images/cars/innova-v-2010/z7355216115211_4f134a50c43a1354bddb7e04b4d013ae.jpg",
   ],
-  14: [
+  18: [
     "/images/cars/mercedes-c200-2012/z7355216496284_0ab94442ae711ae1bb6e97cf426dc704.jpg",
     "/images/cars/mercedes-c200-2012/z7355216502925_7152469f2053fcf738e88f8f61e0a4b8.jpg",
     "/images/cars/mercedes-c200-2012/z7355216514691_0336fcccd4a786f16e12c71935d5fd13.jpg",
@@ -371,7 +431,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/mercedes-c200-2012/z7355216599446_9353810dfe24389686a87b14c55d8648.jpg",
     "/images/cars/mercedes-c200-2012/z7355216609320_b05791103e2d2bf669702d730aea54c8.jpg",
   ],
-  15: [
+  19: [
     "/images/cars/bmw-x1-2010/z7355216982515_36f79ea71737f05874149a1210a27f13.jpg",
     "/images/cars/bmw-x1-2010/z7355216995569_dec5a1cdeee1ab43c81ca2f5d3f59d96.jpg",
     "/images/cars/bmw-x1-2010/z7355216998816_b7bc583cdb2d3e961aab0ae1298da0a4.jpg",
@@ -382,31 +442,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/bmw-x1-2010/z7355217026326_673d7e23237dfc14de15bddc784d6024.jpg",
     "/images/cars/bmw-x1-2010/z7355217031638_eb95555c374a0cb79876af9bc1020ad6.jpg",
   ],
-  16: [
-    "/images/cars/chevrolet-trailblazer-2018/z7441092489744_192af82c4d4109cf00d567ff7f1199a1.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092497445_53bb94ca99ac0099db7ae72b126275ea.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092497751_58557b3398b1b5cd4d9de76e4205d3d9.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092501865_c5a839b5bce12e7ea64885f601af45a7.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092506452_d1304aaa007b0d15a4448a9a10e70d3b.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092507786_fcf73cc2f113b41d8e060e3f97a26d45.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092508099_4d3a4c72523b5fe405fa394cecc830f5.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092515523_91d3d994b913d329f6ed1329bd97befb.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092515652_3f7f9faf2f45c3df49b7c5c319a9cbb0.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092515802_921074d59ee371d085a68bf402b4072b.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092517736_9e12820bede2ba57ebfda5954adf28f9.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092525522_58d1649ea0f738dce695c5defcc090b6.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092526792_f8f970dabd777325ff410f206d9ab029.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092531513_492f84b8ab4279a4998c7aee1c3b92b0.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092536042_712a4f64291d181fd6c432c64a74cd26.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092536790_4a6356f42b0e669008670bb24a0d304f.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092539015_8a53cc250263316861fa38192624340d.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092543476_f530a8f12deb2254278a88f7d1bf0a61.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092543673_990001c4b945d35373ad9e34f29eb57b.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092545670_0f1055d7664ae98d0aa2986690c5c93a.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092547735_df0c641836a78554fa37e28052bf7949.jpg",
-    "/images/cars/chevrolet-trailblazer-2018/z7441092556108_07e59ff0aad78938fadc87fe661ee608.jpg",
-  ],
-  17: [
+  20: [
     "/images/cars/fortuner-v-2014/z7441096230624_622ce5afdc10e3d0a48224845e87deac.jpg",
     "/images/cars/fortuner-v-2014/z7441096238855_7451177bc375c35cedeb9b5182e4a8d5.jpg",
     "/images/cars/fortuner-v-2014/z7441096239765_7c789981d9a742a28604a4f049b480b8.jpg",
@@ -437,27 +473,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/fortuner-v-2014/z7441096317020_af96ed6990c6a7f789f90f40eacaf5d9.jpg",
     "/images/cars/fortuner-v-2014/z7441096319383_4089f4ba0872575707144ca62936e858.jpg",
   ],
-  18: [
-    "/images/cars/fotuner-2011-at/z7441097635577_ef429ae9912f8691fa255a60a2277634.jpg",
-    "/images/cars/fotuner-2011-at/z7441097639471_ad3793e5f5b25fe73bbb89db152aec96.jpg",
-    "/images/cars/fotuner-2011-at/z7441097646237_f53090eb5fe06061a58ddf5ccee9e4d9.jpg",
-    "/images/cars/fotuner-2011-at/z7441097647385_91630e11520d6e5c65059ede2fa0c581.jpg",
-    "/images/cars/fotuner-2011-at/z7441097648169_e87f3c50dcbf8b37b493ce66a1269c5d.jpg",
-    "/images/cars/fotuner-2011-at/z7441097653292_5aa2304fd6dd10ff3ea9773ad46c90b8.jpg",
-    "/images/cars/fotuner-2011-at/z7441097654630_82dae8930b62d3aff1b27e2901d1c359.jpg",
-    "/images/cars/fotuner-2011-at/z7441097654946_b10d7efb333b1eef1f92bb67edb44b0a.jpg",
-    "/images/cars/fotuner-2011-at/z7441097658954_d0b8138a81e063c9033b29000ec69f70.jpg",
-    "/images/cars/fotuner-2011-at/z7441097664302_5369d7a1289348af4245a3614b5a482a.jpg",
-    "/images/cars/fotuner-2011-at/z7441097664594_3e1b94552ab9f49f5e24188c1c566542.jpg",
-    "/images/cars/fotuner-2011-at/z7441097669024_102aeaf26ce7a668eaee483080073dcc.jpg",
-    "/images/cars/fotuner-2011-at/z7441097669335_4919899dd91c2c79c0a31c51aea4df35.jpg",
-    "/images/cars/fotuner-2011-at/z7441097675295_11a412dc8d001bccdf85cfcc9eca9c66.jpg",
-    "/images/cars/fotuner-2011-at/z7441097676133_f2801a40c6903a38d9013e4371e003b4.jpg",
-    "/images/cars/fotuner-2011-at/z7441097676276_aa6478509376ccfdb9d24ba3dfa8b3e9.jpg",
-    "/images/cars/fotuner-2011-at/z7441097681744_7894d2e469d6ef8313c7b018f7ce4e35.jpg",
-    "/images/cars/fotuner-2011-at/z7441097685213_174b6d2508fc5761ee674a28823f7efd.jpg",
-  ],
-  19: [
+  21: [
     "/images/cars/honda-city-top-2020-at/z7441094034935_37329acb53fe54618d17b3c6b2d0b403.jpg",
     "/images/cars/honda-city-top-2020-at/z7441094036394_bae6d290722155a4d10aa7a35b85feaf.jpg",
     "/images/cars/honda-city-top-2020-at/z7441094037310_0d228cc289bb9a8e9edb1ddaf7adf9d2.jpg",
@@ -490,7 +506,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/honda-city-top-2020-at/z7441094116653_46da2f9ff0e7238e547bf1ac88d878bd.jpg",
     "/images/cars/honda-city-top-2020-at/z7441094120274_b42e09f92885fcfa71959cbf859c35e1.jpg",
   ],
-  20: [
+  22: [
     "/images/cars/ranger-2018-at/z7441095478230_be33acb3a48bca98dcec0955869acc03.jpg",
     "/images/cars/ranger-2018-at/z7441095489405_38133aba25b95ea353a22cf723d85c8e.jpg",
     "/images/cars/ranger-2018-at/z7441095489719_cb406f095bc9311d03bccbba6dfa9cd4.jpg",
@@ -510,7 +526,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/ranger-2018-at/z7441095526464_85b99e4ae120bd721adbaeb0682ed734.jpg",
     "/images/cars/ranger-2018-at/z7441095527706_29bc069b0fa9781215050b37a939bf7f.jpg",
   ],
-  21: [
+  23: [
     "/images/cars/vios-g-2019/z7441093137206_04f021101c56c05a511399e72607ec38.jpg",
     "/images/cars/vios-g-2019/z7441093137564_69d57ac918da6f9870e877151a4792f3.jpg",
     "/images/cars/vios-g-2019/z7441093138812_54737004e88c8174782ede248f121012.jpg",
@@ -532,7 +548,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/vios-g-2019/z7441093187826_6771d4189b26bcc8946a580852a77dd6.jpg",
     "/images/cars/vios-g-2019/z7441093191887_cb30e64ddf967380be41e20ed22eea63.jpg",
   ],
-  22: [
+  24: [
     "/images/cars/cx5-2017-mau-moi/z7446915863452_e79bf2306187adc8985568f856085b00.jpg",
     "/images/cars/cx5-2017-mau-moi/z7446915870805_7f1d09a31190e370c06c4b0b06fde32e.jpg",
     "/images/cars/cx5-2017-mau-moi/z7446915871304_06dcc8f8b0d51b796ea9162942586d54.jpg",
@@ -550,7 +566,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/cx5-2017-mau-moi/z7446915902183_8053285263385e2a1a0efb29ce327ce5.jpg",
     "/images/cars/cx5-2017-mau-moi/z7446915958221_5c565e0750baf6961e53d0e1be073668.jpg",
   ],
-  23: [
+  25: [
     "/images/cars/fotuner-2013-2cau-at/z7441097635577_ef429ae9912f8691fa255a60a2277634.jpg",
     "/images/cars/fotuner-2013-2cau-at/z7441097639471_ad3793e5f5b25fe73bbb89db152aec96.jpg",
     "/images/cars/fotuner-2013-2cau-at/z7441097646237_f53090eb5fe06061a58ddf5ccee9e4d9.jpg",
@@ -570,7 +586,7 @@ const carImagesMap: Record<number, string[]> = {
     "/images/cars/fotuner-2013-2cau-at/z7441097681744_7894d2e469d6ef8313c7b018f7ce4e35.jpg",
     "/images/cars/fotuner-2013-2cau-at/z7441097685213_174b6d2508fc5761ee674a28823f7efd.jpg",
   ],
-  24: [
+  26: [
     "/images/cars/kia-sedona-2017/z7446914423769_ab3ce342aa1b6a4e0bebd38048289763.jpg",
     "/images/cars/kia-sedona-2017/z7446914428917_d3caced4a43a7c3d9374ebc983ae5141.jpg",
     "/images/cars/kia-sedona-2017/z7446914434638_e0aafe4d0cd13f39c8af50e065a6487a.jpg",
