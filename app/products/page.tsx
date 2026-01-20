@@ -323,7 +323,7 @@ const cars = [
   },
   {
     id: 23,
-    name: "Fotuner 2013 2Cầu AT",
+    name: "Fotuner 2013 AT",
     price: "Liên hệ",
     fuel: "Xăng",
     status: "Đã sử dụng",
